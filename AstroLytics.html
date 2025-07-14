@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AstroLytics</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🚀 AstroLytics</h1>
+    <p>Your all-in-one space productivity & analytics hub</p>
+  </header>
+
+  <section id="dashboard">
+    <h2>📊 Dashboard Analytics</h2>
+    <canvas id="myChart"></canvas>
+  </section>
+
+  <section id="tasks">
+    <h2>✅ To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="New task..."/>
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <section id="timer">
+    <h2>⏳ Study Timer</h2>
+    <div id="countdown">25:00</div>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="resetTimer()">Reset</button>
+  </section>
+
+  <section id="budget">
+    <h2>💰 Budget Tracker</h2>
+    <input type="number" id="expense" placeholder="Amount"/>
+    <button onclick="addExpense()">Add</button>
+    <div id="budgetTotal">Total: $0</div>
+  </section>
+
+  <section id="feedback">
+    <h2>📬 Submit to Mission Control</h2>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdF-EXAMPLE-ID/formResponse" method="POST" target="_blank">
+      <input name="entry.123456" type="text" placeholder="Your name" required/>
+      <input name="entry.654321" type="text" placeholder="What’s your mission update?" required/>
+      <button type="submit">Submit Data</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Made by Siddharth Taneja 🚀 | Class: Middle School Rocket Squad</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
