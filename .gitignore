@@ -1,0 +1,12 @@
+# ignore Mac / Windows junk
+.DS_Store
+Thumbs.db
+
+# ignore VS Code settings
+.vscode/
+
+# ignore Node if you ever add it
+node_modules/
+
+# future env
+.env
